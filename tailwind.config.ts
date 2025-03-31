@@ -53,16 +53,20 @@ export default {
           DEFAULT: "rgb(var(--card) / <alpha-value>)",
           foreground: "rgb(var(--card-foreground) / <alpha-value>)",
         },
-        // Custom colors
+        // Custom colors updated to royal purple and blue
         purple: {
-          DEFAULT: "#5B21B6",
-          light: "#7C3AED",
+          DEFAULT: "#5B21B6", // Royal purple
+          light: "#7C3AED", 
           dark: "#4C1D95",
         },
         royal: {
-          DEFAULT: "#2563EB",
+          DEFAULT: "#2563EB", // Royal blue
           light: "#3B82F6",
           dark: "#1D4ED8",
+        },
+        sea: {
+          light: "#E0F2FE", // Light blue tint for gradient effects
+          dark: "#0F172A",  // Dark blue for contrast
         },
       },
       borderRadius: {

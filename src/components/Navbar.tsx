@@ -56,7 +56,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button asChild className="btn-primary">
+          <Button asChild className="bg-purple-light hover:bg-purple text-white">
             <Link to="/contact">Book an Appointment</Link>
           </Button>
         </div>
@@ -103,7 +103,7 @@ export default function Navbar() {
               </ul>
             </div>
             
-            <Button asChild className="w-full btn-primary mt-6">
+            <Button asChild className="w-full bg-purple-light hover:bg-purple text-white mt-6">
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 Book an Appointment
               </Link>

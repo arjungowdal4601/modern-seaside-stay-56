@@ -28,7 +28,7 @@ export default function Services() {
       
       <main className="flex-1 pt-20">
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-b from-background/30 to-background">
+        <section className="relative py-20 bg-gradient-to-b from-purple-dark to-background">
           <div className="container relative z-10 pt-10">
             <div className="text-center max-w-3xl mx-auto opacity-0 animate-fade-in">
               <span className="text-sm text-primary font-medium uppercase tracking-wider">
@@ -172,7 +172,7 @@ export default function Services() {
           </div>
         </section>
         
-        {/* CTA Section */}
+        {/* CTA Section - Update gradient colors */}
         <section className="section bg-gradient-to-r from-purple-dark to-royal-dark relative overflow-hidden">
           <div className="absolute inset-0">
             <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_30%_40%,rgba(255,255,255,0.2)_0%,rgba(0,0,0,0.5)_100%)]"></div>
