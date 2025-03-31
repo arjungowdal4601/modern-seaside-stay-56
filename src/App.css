@@ -13,10 +13,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(124, 58, 237, 0.6)); /* Updated to use purple */
+  filter: drop-shadow(0 0 2em rgba(124, 58, 237, 0.6)); /* Purple shadow */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em rgba(59, 130, 246, 0.6)); /* Updated to use royal blue */
+  filter: drop-shadow(0 0 2em rgba(59, 130, 246, 0.6)); /* Royal blue shadow */
 }
 
 @keyframes logo-spin {

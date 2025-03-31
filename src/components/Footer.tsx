@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <footer className="bg-card text-card-foreground pt-16 pb-8 border-t border-white/5">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="animate-fade-in [animation-delay:100ms]">
             <h4 className="text-xl font-bold font-serif mb-4">
-              <span className="bg-gradient-to-r from-purple-light to-royal-light bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Purple Octa Creation
               </span>
             </h4>
@@ -32,28 +32,6 @@ export default function Footer() {
                 <span className="sr-only">Twitter</span>
               </a>
             </div>
-          </div>
-          
-          <div className="animate-fade-in [animation-delay:200ms]">
-            <h4 className="text-xl font-bold font-serif mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              {[
-                { name: "Home", path: "/" },
-                { name: "Services", path: "/services" },
-                { name: "About", path: "/about" },
-                { name: "Gallery", path: "/gallery" },
-                { name: "Contact", path: "/contact" }
-              ].map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    to={link.path} 
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
           
           <div className="animate-fade-in [animation-delay:300ms]">
