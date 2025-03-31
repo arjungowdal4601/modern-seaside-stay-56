@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -10,7 +9,7 @@ import {
   Store, 
   Sparkles, 
   PenTool, 
-  LayoutPlaneLine, 
+  LayoutPanelLeft, 
   Lightbulb, 
   Clock,
   ArrowRight,
@@ -65,7 +64,7 @@ export default function Services() {
                   delay: 200
                 },
                 {
-                  icon: <LayoutPlaneLine className="h-10 w-10" />,
+                  icon: <LayoutPanelLeft className="h-10 w-10" />,
                   title: "Space Planning",
                   description: "Maximize the potential of your space with our expert planning services that ensure optimal flow, functionality, and aesthetic harmony.",
                   features: ["Functional layout design", "Traffic flow optimization", "Furniture arrangement", "Spatial problem-solving", "Accessibility considerations"],
