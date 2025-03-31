@@ -1,20 +1,22 @@
 
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
-  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-card text-card-foreground pt-16 pb-8 border-t">
+    <footer className="bg-card text-card-foreground pt-16 pb-8 border-t border-white/5">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="animate-fade-in [animation-delay:100ms]">
-            <h4 className="text-xl font-bold mb-4">MareSereno</h4>
+            <h4 className="text-xl font-bold font-serif mb-4">
+              <span className="bg-gradient-to-r from-purple-light to-royal-light bg-clip-text text-transparent">
+                Purple Octa Creation
+              </span>
+            </h4>
             <p className="text-muted-foreground mb-4">
-              {t.footer.description}
+              Transforming spaces into extraordinary experiences through thoughtful design and meticulous craftsmanship.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -33,15 +35,14 @@ export default function Footer() {
           </div>
           
           <div className="animate-fade-in [animation-delay:200ms]">
-            <h4 className="text-xl font-bold mb-4">{t.footer.quickLinks}</h4>
+            <h4 className="text-xl font-bold font-serif mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                { name: t.nav.home, path: "/" },
-                { name: t.nav.apartments, path: "/apartments" },
-                { name: t.nav.amenities, path: "/amenities" },
-                { name: t.nav.gallery, path: "/gallery" },
-                { name: t.nav.contact, path: "/contact" },
-                { name: t.nav.bookNow, path: "/booking" },
+                { name: "Home", path: "/" },
+                { name: "Services", path: "/services" },
+                { name: "About", path: "/about" },
+                { name: "Gallery", path: "/gallery" },
+                { name: "Contact", path: "/contact" }
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -56,36 +57,36 @@ export default function Footer() {
           </div>
           
           <div className="animate-fade-in [animation-delay:300ms]">
-            <h4 className="text-xl font-bold mb-4">{t.footer.contact}</h4>
+            <h4 className="text-xl font-bold font-serif mb-4">Contact</h4>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-0.5 text-primary" />
                 <span className="text-muted-foreground">
-                  123 Seaside Boulevard<br />
-                  Costa Bella, 12345<br />
-                  Italy
+                  123 Design Street<br />
+                  Creative District<br />
+                  New York, NY 10001
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">+39 123 4567 890</span>
+                <span className="text-muted-foreground">+1 (555) 123-4567</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">info@maresereno.com</span>
+                <span className="text-muted-foreground">info@purpleocta.com</span>
               </li>
             </ul>
           </div>
           
           <div className="animate-fade-in [animation-delay:400ms]">
-            <h4 className="text-xl font-bold mb-4">{t.footer.newsletter}</h4>
+            <h4 className="text-xl font-bold font-serif mb-4">Newsletter</h4>
             <p className="text-muted-foreground mb-4">
-              {t.footer.newsletterDesc}
+              Subscribe to our newsletter for design inspiration, project updates, and exclusive offers.
             </p>
             <form className="flex flex-col space-y-2">
               <input 
                 type="email" 
-                placeholder={t.footer.yourEmail} 
+                placeholder="Your email address" 
                 className="rounded-md px-4 py-2 bg-muted text-foreground"
                 required 
               />
@@ -93,14 +94,14 @@ export default function Footer() {
                 type="submit" 
                 className="btn-primary mt-2"
               >
-                {t.footer.subscribe}
+                Subscribe
               </button>
             </form>
           </div>
         </div>
         
-        <div className="border-t border-border pt-8 mt-8 text-center text-muted-foreground">
-          <p>&copy; {currentYear} MareSereno. {t.footer.allRights}</p>
+        <div className="border-t border-white/5 pt-8 text-center text-muted-foreground">
+          <p>&copy; {currentYear} Purple Octa Creation. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
