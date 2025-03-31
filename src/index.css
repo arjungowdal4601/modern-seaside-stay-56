@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
@@ -52,9 +53,9 @@
   }
   
   .btn-primary {
-    @apply bg-primary text-primary-foreground rounded-md px-6 py-2.5 font-medium 
-    transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 active:scale-[0.98]
-    border border-primary/20;
+    @apply bg-purple-light text-primary-foreground rounded-md px-6 py-2.5 font-medium 
+    transition-all duration-300 hover:shadow-lg hover:shadow-purple/20 active:scale-[0.98]
+    border border-purple/20 hover:bg-purple;
   }
   
   .btn-secondary {

@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-card text-card-foreground pt-16 pb-8 border-t border-white/5">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="animate-fade-in [animation-delay:100ms]">
             <h4 className="text-xl font-bold font-serif mb-4">
               <span className="bg-gradient-to-r from-purple-light to-royal-light bg-clip-text text-transparent">
@@ -76,27 +76,6 @@ export default function Footer() {
                 <span className="text-muted-foreground">info@purpleocta.com</span>
               </li>
             </ul>
-          </div>
-          
-          <div className="animate-fade-in [animation-delay:400ms]">
-            <h4 className="text-xl font-bold font-serif mb-4">Newsletter</h4>
-            <p className="text-muted-foreground mb-4">
-              Subscribe to our newsletter for design inspiration, project updates, and exclusive offers.
-            </p>
-            <form className="flex flex-col space-y-2">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="rounded-md px-4 py-2 bg-muted text-foreground"
-                required 
-              />
-              <button 
-                type="submit" 
-                className="btn-primary mt-2"
-              >
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
         
