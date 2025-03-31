@@ -13,16 +13,20 @@
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 271 81% 42%;  /* Royal purple */
+    --primary: 271 81% 42%;        /* Royal purple */
     --primary-foreground: 0 0% 98%;
-    --secondary: 217 91% 53%;  /* Royal blue */
+    --secondary: 217 91% 53%;      /* Royal blue */
     --secondary-foreground: 0 0% 98%;
+
+    /* FIX: Remove any red-tinted background variable if present */
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+
+    --destructive: 0 62.8% 30.6%;                /* You can keep this for error states */
     --destructive-foreground: 0 0% 98%;
+    
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
@@ -32,16 +36,16 @@
   * {
     @apply border-border selection:bg-primary/30 selection:text-white;
   }
-  
+
   html {
     @apply scroll-smooth;
   }
-  
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
   }
@@ -51,42 +55,42 @@
   .container {
     @apply px-4 md:px-6 lg:px-8 mx-auto;
   }
-  
+
   .btn-primary {
-    @apply bg-purple-light text-primary-foreground rounded-md px-6 py-2.5 font-medium 
-    transition-all duration-300 hover:shadow-lg hover:shadow-purple/20 active:scale-[0.98]
-    border border-purple/20 hover:bg-purple;
+    @apply bg-primary text-primary-foreground rounded-md px-6 py-2.5 font-medium 
+    transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 active:scale-[0.98]
+    border border-primary/20 hover:bg-primary;
   }
-  
+
   .btn-secondary {
     @apply bg-transparent text-foreground rounded-md px-6 py-2.5 font-medium 
     transition-all duration-300 hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]
     border border-white/20;
   }
-  
+
   .section {
     @apply py-16 md:py-24 lg:py-32;
   }
-  
+
   .glass-card {
     @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl shadow-lg;
   }
-  
+
   .page-transition-enter {
     opacity: 0;
     transform: translateY(10px);
   }
-  
+
   .page-transition-enter-active {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 400ms, transform 400ms;
   }
-  
+
   .page-transition-exit {
     opacity: 1;
   }
-  
+
   .page-transition-exit-active {
     opacity: 0;
     transition: opacity 300ms;
